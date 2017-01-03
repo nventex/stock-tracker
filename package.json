@@ -1,0 +1,24 @@
+{
+  "name": "stock-tracker",
+  "version": "1.0.0",
+  "description": "Stock-Tracker Server",
+  "main": "app.js",
+  "engines": {
+    "node": "6.9.2"
+  },
+  "scripts": {
+    "start": "node app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "async": "2.0.0-rc.6",
+    "body-parser": "1.15.1",
+    "cors": "2.7.1",
+    "express": "4.13.4",
+    "mongoose": "4.4.19",
+    "node-rest-client": "1.8.0",
+    "underscore-node": "0.1.2"
+  }
+}
