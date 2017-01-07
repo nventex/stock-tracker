@@ -10,12 +10,12 @@ var port = process.env.PORT || 3000;
 
 var corsOptions = {
   origin: function (origin, callback) {
-    var originIsWhitelisted = (origin ? origin.includes("edmondtang.com") : false);
+    var originIsWhitelisted = (origin ? origin.includes(process.env.allowedOrigin) : false);
     callback(true ? null : 'Bad Request', originIsWhitelisted);
   }
 }
 
-// app.use(cors());
+app.use(cors(corsOptions));
 
 app.use(bodyParser.json());
 
